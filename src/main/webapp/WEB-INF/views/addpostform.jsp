@@ -7,10 +7,13 @@
 <h1>Add New Post</h1>
     <form action="addok" method="post">
         <table id="edit">
-            <tr><td>카테고리</td><td><input type="text" name="category"/></td></tr>
-            <tr><td>제목</td><td><input type="text" name="title"/></td></tr>
-            <tr><td>글쓴이</td><td><input type="text" name="writer"/></td></tr>
-            <tr><td>내용</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
+            <tr><td>이름</td><td><input type="text" name="name"/></td></tr>
+            <tr><td>나이</td><td><input type="text" name="age"/></td></tr>
+            <tr><td>학기 수</td><td><input type="text" name="semester"/></td></tr>
+            <tr><td>전공</td><td><input type="text" name="department"/></td></tr>
+            <tr><td>지원 파트</td><td><input type="text" name="part"/></td></tr>
+            <tr><td>성별</td><td><input type="text" name="MF"/></td></tr>
+            <tr><td>지원 동기</td><td><textarea cols="50" rows="5" name="motive"></textarea></td></tr>
         </table>
         <button type="button" onclick="location.href='list'">목록보기</button>
         <button type="submit">등록하기</button>

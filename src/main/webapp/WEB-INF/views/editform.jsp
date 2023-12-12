@@ -16,10 +16,13 @@
     <form action="../editok" method="POST">
         <input type="hidden" name="seq" value="${u.seq}" />
         <table id="edit">
-            <tr><td>카테고리</td><td><input type="text" name="category" value="${u.category}" /></td></tr>
-            <tr><td>제목</td><td><input type="text" name="title" value="${u.title}" /></td></tr>
-            <tr><td>글쓴이</td><td><input type="text" name="writer" value="${u.writer}" /></td></tr>
-            <tr><td>내용</td><td><textarea cols="50" rows="5" name="content">${u.content}</textarea></td></tr>
+            <tr><td>이름</td><td><input type="text" name="name" value="${u.name}" /></td></tr>
+            <tr><td>나이</td><td><input type="text" name="age" value="${u.age}" /></td></tr>
+            <tr><td>학기 수</td><td><input type="text" name="semester" value="${u.semester}" /></td></tr>
+            <tr><td>전공</td><td><input type="text" name="department" value="${u.department}" /></td></tr>
+            <tr><td>지원 파트</td><td><input type="text" name="part" value="${u.part}" /></td></tr>
+            <tr><td>성별</td><td><input type="text" name="MF" value="${u.MF}" /></td></tr>
+            <tr><td>지원 동기</td><td><textarea cols="50" rows="5" name="motive">${u.motive}</textarea></td></tr>
         </table>
         <input type="submit" value="수정하기" />
         <input type="button" value="취소하기" onclick="history.back()" />
