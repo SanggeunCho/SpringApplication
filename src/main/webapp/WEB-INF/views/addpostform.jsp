@@ -1,10 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Insert title here</title>
+    <title>성가대 지원하기</title>
 </head>
 <body>
-<h1>Add New Post</h1>
+<h1>성가대 지원서</h1>
     <form action="addok" method="post">
         <table id="edit">
             <tr><td>이름</td><td><input type="text" name="name"/></td></tr>

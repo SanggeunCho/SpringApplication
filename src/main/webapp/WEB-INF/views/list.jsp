@@ -35,17 +35,13 @@
 </head>
 
 <body>
-    <div><h1>자유게시판</h1><div id="logout"><a href="../login/logout">logout</a></div></div>
+    <div><h1>성가대 지원 게시판</h1><div id="logout"><a href="../login/logout">logout</a></div></div>
     <table id="list" width="90%">
     <tr>
         <th>번호</th>
         <th>이름</th>
         <th>나이</th>
-        <th>학기 수</th>
-        <th>전공</th>
         <th>지원 파트</th>
-        <th>성별</th>
-        <th>등록일</th>
         <th>지원 동기</th>
         <th>Edit</th>
         <th>Delete</th>
@@ -54,14 +50,10 @@
     <c:forEach items="${list}" var="u">
         <tr>
             <td>${u.seq}</td>
-            <td>${u.name}</td>
-            <td>${u.age}</td>
-            <td>${u.semester}</td>
-            <td>${u.department}</td>
-            <td>${u.part}</td>
-            <td>${u.MF}</td>
-            <td>${u.regdate}</td>
-            <td>${u.motive}</td>
+            <td class="clickable" onclick="location.href='getform/${u.seq}'">${u.name}</td>
+            <td class="clickable" onclick="location.href='getform/${u.seq}'">${u.age}</td>
+            <td class="clickable" onclick="location.href='getform/${u.seq}'">${u.part}</td>
+            <td class="clickable" onclick="location.href='getform/${u.seq}'">${u.motive}</td>
             <td><a href="editform/${u.seq}">글수정</a></td>
             <td><a href="javascript:delete_ok('${u.seq}')">글삭제</a></td>
         </tr>

@@ -9,10 +9,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Edit Form</title>
+    <title>지원서 수정하기</title>
 </head>
 <body>
-<h1>Edit Form</h1>
+<h1>지원서 수정하기</h1>
     <form action="../editok" method="POST">
         <input type="hidden" name="seq" value="${u.seq}" />
         <table id="edit">
